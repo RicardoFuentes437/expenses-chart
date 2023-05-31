@@ -1,0 +1,16 @@
+@use '../variables' as v;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+html, body, #root{
+    width: 100%;
+    height: 100%;
+    background-color: v.$Cream;
+    font-family: 'DM Sans';
+
+    .App{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
+}

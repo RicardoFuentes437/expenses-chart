@@ -1,0 +1,80 @@
+@use '../variables' as v;
+
+@mixin bold-text{
+    font-weight: 700;
+    color: v.$Dark-brown;
+}
+
+@mixin labels{
+    color: v.$Medium-brown;
+    font-size: 18px;
+}
+
+@mixin padding-margin{
+    padding: 0;
+    margin: 0;
+}
+
+#chart-container{
+    width: 500px;
+    height: 450px;
+    background-color: v.$Very-pale-orange;
+    border-radius: 10px;
+
+    #chart-title{
+        @include bold-text;
+        font-size: 26px;
+        padding-top: 20px;
+    }
+
+    #bar-chart-section{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #divider-line{
+        width: 85%;
+        border-top: 1px solid v.$Cream;
+        margin-top: 20px;
+    }
+
+    #bottom-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+
+        #left-section{
+            #total-label{
+                @include labels;
+                @include padding-margin;
+            }
+
+            #total{
+                @include bold-text;
+                @include padding-margin;
+                font-size: 34px;
+            }
+        }
+
+        #right-section{
+            text-align: right;
+
+            #percentage{
+                @include bold-text;
+                @include padding-margin;
+            }
+
+            #percentage-label{
+                @include labels;
+                @include padding-margin;
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        width: 350px;
+        height: 380px;
+    }
+}

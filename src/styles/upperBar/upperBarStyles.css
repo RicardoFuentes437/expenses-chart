@@ -1,0 +1,35 @@
+#upper-bar {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 80px;
+  justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 10px;
+  color: hsl(33, 100%, 98%);
+}
+#upper-bar #text-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 0px 20px;
+}
+#upper-bar #text-section #balance-label {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+#upper-bar #text-section #balance {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+#upper-bar #logo {
+  width: 60px;
+  padding-right: 20px;
+}
+@media (max-width: 550px) {
+  #upper-bar {
+    width: 350px;
+  }
+}/*# sourceMappingURL=upperBarStyles.css.map */

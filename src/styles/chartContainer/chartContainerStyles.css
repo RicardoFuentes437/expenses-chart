@@ -1,0 +1,62 @@
+#chart-container {
+  width: 500px;
+  height: 450px;
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 10px;
+}
+#chart-container #chart-title {
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+  font-size: 26px;
+  padding-top: 20px;
+}
+#chart-container #bar-chart-section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#chart-container #divider-line {
+  width: 85%;
+  border-top: 1px solid hsl(27, 66%, 92%);
+  margin-top: 20px;
+}
+#chart-container #bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+#chart-container #bottom-section #left-section #total-label {
+  color: hsl(28, 10%, 53%);
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+#chart-container #bottom-section #left-section #total {
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+  padding: 0;
+  margin: 0;
+  font-size: 34px;
+}
+#chart-container #bottom-section #right-section {
+  text-align: right;
+}
+#chart-container #bottom-section #right-section #percentage {
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+  padding: 0;
+  margin: 0;
+}
+#chart-container #bottom-section #right-section #percentage-label {
+  color: hsl(28, 10%, 53%);
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 550px) {
+  #chart-container {
+    width: 350px;
+    height: 380px;
+  }
+}/*# sourceMappingURL=chartContainerStyles.css.map */

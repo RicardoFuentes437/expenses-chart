@@ -1,0 +1,40 @@
+@use '../variables' as v;
+
+#upper-bar{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 80px;
+    justify-content: space-between;
+    background-color: v.$Soft-red;
+    border-radius: 10px;
+    color: v.$Very-pale-orange;
+
+    #text-section{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px 0px 20px;
+
+        #balance-label{
+            font-size: 18px;
+            padding: 0;
+            margin: 0;
+        }
+
+        #balance{
+            font-weight: 700;
+            font-size: 24px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    #logo{
+        width: 60px;
+        padding-right: 20px;
+    }
+
+    @media (max-width: 550px) {
+        width: 350px;
+    }
+}
