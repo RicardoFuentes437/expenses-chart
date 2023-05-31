@@ -10,6 +10,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/RicardoFuentes437" target="_blank" rel="noreferrer">Ricardo Fuentes Urbina</a>.
+    </footer>
   </React.StrictMode>
 );
 

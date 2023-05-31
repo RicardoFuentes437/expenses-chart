@@ -10,4 +10,11 @@ html .App, body .App, #root .App {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+}
+html .attribution, body .attribution, #root .attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
 }/*# sourceMappingURL=pageStyles.css.map */
